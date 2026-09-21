@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AVI MAHARI DIGITAL — Android App Developer</title>
+<meta name="description" content="AVI MAHARI DIGITAL is an independent Android app studio. We build AlarmX, a reliable alarm clock, timer, stopwatch and world clock app for Android.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⏰</text></svg>">
+<style>
+  :root{
+    --bg:#ffffff;
+    --surface:#f7f8fa;
+    --border:#e3e6ec;
+    --text:#14161a;
+    --muted:#5b6472;
+    --accent:#3355e0;
+    --accent-soft:#eef1fd;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#0e1013;
+      --surface:#16191f;
+      --border:#262b33;
+      --text:#eef0f4;
+      --muted:#9aa4b2;
+      --accent:#7e97ff;
+      --accent-soft:#1b2137;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0e1013;
+    --surface:#16191f;
+    --border:#262b33;
+    --text:#eef0f4;
+    --muted:#9aa4b2;
+    --accent:#7e97ff;
+    --accent-soft:#1b2137;
+  }
+
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size:17px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:0 16px}
+
+  header{padding:64px 0 44px;border-bottom:1px solid var(--border)}
+  .brand{
+    display:inline-block;
+    font-size:13px;letter-spacing:.14em;text-transform:uppercase;
+    font-weight:700;color:var(--accent);
+    padding:5px 11px;border-radius:999px;background:var(--accent-soft);
+    margin-bottom:22px;
+  }
+  h1{font-size:34px;line-height:1.2;margin:0 0 14px;letter-spacing:-.02em;font-weight:700}
+  .lede{font-size:18px;color:var(--muted);margin:0;max-width:56ch}
+
+  section{padding:44px 0;border-bottom:1px solid var(--border)}
+  h2{font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0 0 18px;font-weight:700}
+  p{margin:0 0 16px}
+  p:last-child{margin-bottom:0}
+
+  .card{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:14px;
+    padding:26px;
+  }
+  .app-head{display:flex;align-items:center;gap:16px;margin-bottom:18px;flex-wrap:wrap}
+  .app-icon{
+    width:56px;height:56px;flex:none;border-radius:14px;
+    background:linear-gradient(145deg,var(--accent),#8e6bff);
+    display:flex;align-items:center;justify-content:center;
+    font-size:28px;line-height:1;
+  }
+  .app-name{font-size:21px;font-weight:700;margin:0;letter-spacing:-.01em}
+  .app-meta{font-size:14px;color:var(--muted);margin:2px 0 0}
+
+  ul.features{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+  ul.features li{position:relative;padding-left:22px;font-size:15.5px;color:var(--text)}
+  ul.features li::before{content:"";position:absolute;left:0;top:.62em;width:7px;height:7px;border-radius:50%;background:var(--accent)}
+  ul.features b{display:block;font-weight:600}
+  ul.features span{color:var(--muted);font-size:14.5px}
+
+  .actions{margin-top:24px;display:flex;gap:12px;flex-wrap:wrap}
+  .btn{
+    display:inline-block;text-decoration:none;font-size:15px;font-weight:600;
+    padding:11px 20px;border-radius:9px;
+    background:var(--accent);color:#fff;border:1px solid transparent;
+  }
+  .btn.secondary{background:transparent;color:var(--accent);border-color:var(--border)}
+  .btn:hover{opacity:.9}
+
+  dl{margin:0;display:grid;gap:14px}
+  dt{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:700}
+  dd{margin:3px 0 0;font-size:16px}
+  a{color:var(--accent)}
+  code{
+    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    font-size:14px;background:var(--surface);border:1px solid var(--border);
+    padding:2px 7px;border-radius:6px;
+  }
+
+  footer{padding:32px 0 56px;font-size:14px;color:var(--muted)}
+  @media (max-width:520px){
+    header{padding:44px 0 32px}
+    h1{font-size:27px}
+    .lede{font-size:16.5px}
+    .card{padding:20px}
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header>
+    <span class="brand">Avi Mahari Digital</span>
+    <h1>Independent Android app development</h1>
+    <p class="lede">A small studio based in Israel, building fast, lightweight utility apps for Android. Published on Google Play and maintained directly by the developer.</p>
+  </header>
+
+  <section>
+    <h2>About</h2>
+    <p>Avi Mahari Digital is an independent software studio run by Avi Mahari. We design and develop consumer Android applications with a focus on everyday utilities — tools people open daily, that stay small, fast and dependable.</p>
+    <p>Every app listed here is developed, published and supported in-house. We respond to user support requests directly at the address below, and we publish a privacy policy for each application we release.</p>
+  </section>
+
+  <section>
+    <h2>Our apps</h2>
+
+    <div class="card">
+      <div class="app-head">
+        <div class="app-icon">⏰</div>
+        <div>
+          <p class="app-name">AlarmX: Alarm Clock &amp; Timer</p>
+          <p class="app-meta">Android · Tools · Free</p>
+        </div>
+      </div>
+
+      <p>AlarmX is a simple, reliable alarm clock and timer app designed to help you wake up on time, manage your daily routine and keep track of time. It is built to be lightweight, fast and straightforward — useful for waking up in the morning, studying, working, exercising, cooking and traveling.</p>
+
+      <ul class="features">
+        <li><b>Alarm clock</b><span>Customizable alarms for mornings, work and reminders.</span></li>
+        <li><b>Smart alarms</b><span>Repeat days, notes and flexible scheduling.</span></li>
+        <li><b>Timer</b><span>For studying, cooking, workouts and focused work.</span></li>
+        <li><b>Stopwatch</b><span>Accurate time measurement and tracking.</span></li>
+        <li><b>World clock</b><span>Check the time across different locations.</span></li>
+        <li><b>Lightweight by design</b><span>Small footprint, quick to open, no clutter.</span></li>
+      </ul>
+
+      <div class="actions">
+        <a class="btn" href="https://play.google.com/store/apps/details?id=com.alarmx.clock">View on Google Play</a>
+        <a class="btn secondary" href="https://avi416.github.io/alarmx-privacy-policy/">Privacy policy</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Support</h2>
+    <p>For questions, bug reports, feature requests or privacy enquiries about any of our apps, contact us by email. We read every message and normally reply within a few business days.</p>
+    <dl>
+      <dt>Support email</dt>
+      <dd><a href="mailto:alramx4@gmail.com">alramx4@gmail.com</a></dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>Business information</h2>
+    <dl>
+      <dt>Trading name</dt>
+      <dd>Avi Mahari Digital</dd>
+      <dt>Developer</dt>
+      <dd>Avi Mahari</dd>
+      <dt>Location</dt>
+      <dd>Israel</dd>
+      <dt>Google Play developer</dt>
+      <dd>AlarmX</dd>
+      <dt>Package ID</dt>
+      <dd><code>com.alarmx.clock</code></dd>
+    </dl>
+  </section>
+
+  <footer>
+    <p>© <span id="y">2026</span> Avi Mahari Digital. All rights reserved. Google Play and the Google Play logo are trademarks of Google LLC.</p>
+  </footer>
+
+</div>
+
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+
+</body>
+</html>
